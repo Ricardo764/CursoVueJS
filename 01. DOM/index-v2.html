@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<div id="app">
+    <h1>{{ mensagem }}</h1>
+    <h2>{{ saudacoes()  }}</h2>
+</div>
+
+
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            mensagem: "Hello World"
+        },
+        methods: {
+
+            saudacoes(){
+                return "Saudações..."
+            }
+        }
+    })
+</script>
